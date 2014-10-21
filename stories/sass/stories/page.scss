@@ -1,0 +1,64 @@
+.page
+{
+	margin: 0 0 b(2);
+	@include grid(6, 0, 12, 3, 3);
+
+	p
+	{
+		margin: 0 b(1);
+
+		text-indent: b(1);
+
+		&.is-indented
+		{
+			margin-left: 0;
+
+			border-left: rem(2) solid color(text, tint, 4);	    
+	    
+	    padding-left: rem(_(grid baseline-height) - 2);
+		}
+
+		&.is-spaced
+		{
+			position: relative;
+
+			margin-bottom: b(3);
+
+			@include after(left 0 right 0 top 100%, absolute, '\25CA')
+			{
+				margin-top: b(1);
+				height: b(1);
+
+				color: color(secondary-1 base);
+
+				font-weight: 600;
+				text-align: center;
+			}
+
+			& + p
+			{
+				text-indent: 0;
+			}
+		}
+
+		&.is-small
+		{
+			@include font-size(size(4));
+		}
+
+		&.is-separated
+		{
+			border-top: rem(2) solid #f8bf00;	    
+	    
+	    padding-top: rem(_(grid baseline-height) - 2);
+	    margin-top: b(4);
+
+	    text-indent: 0;
+		}
+	}
+
+	h1 + p
+	{
+		text-indent: 0;
+	}
+}
