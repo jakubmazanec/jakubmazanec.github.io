@@ -1,13 +1,13 @@
 .page
 {
 	margin: 0 0 b(2);
-	@include grid(6, 0, 12, 3, 3);
+	@include grid(8, 0, 12, 2, 2);
 
 	p
 	{
 		margin: 0 b(1);
 
-		text-indent: b(1);
+		text-indent: 1em;
 
 		&.is-indented
 		{
