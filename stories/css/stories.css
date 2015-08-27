@@ -887,6 +887,24 @@ textarea {
   margin-right: 16.66667%;
   padding-left: 0rem;
   padding-right: 0rem; }
+  @media (max-width: 1000px) {
+    .page {
+      box-sizing: border-box;
+      float: left;
+      width: 83.33333%;
+      margin-left: 8.33333%;
+      margin-right: 8.33333%;
+      padding-left: 0rem;
+      padding-right: 0rem; } }
+  @media (max-width: 700px) {
+    .page {
+      box-sizing: border-box;
+      float: left;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding-left: 0rem;
+      padding-right: 0rem; } }
   .page p {
     margin: 0 1.4rem;
     text-indent: 1em; }
