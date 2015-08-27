@@ -70,3 +70,11 @@
 		text-indent: 0;
 	}
 }
+
+body {
+
+	@media (max-width: 700px) {
+		padding: 0;
+	}
+	
+}

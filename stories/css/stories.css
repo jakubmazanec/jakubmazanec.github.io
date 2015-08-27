@@ -938,3 +938,7 @@ textarea {
       text-indent: 0; }
   .page h1 + p {
     text-indent: 0; }
+
+@media (max-width: 700px) {
+  body {
+    padding: 0; } }
