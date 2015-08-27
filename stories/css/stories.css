@@ -904,7 +904,10 @@ textarea {
       margin-left: 0%;
       margin-right: 0%;
       padding-left: 0rem;
-      padding-right: 0rem; } }
+      padding-right: 0rem; }
+      .page .ash-heading--story-title {
+        font-size: 2.4rem;
+        line-height: 1.16667; } }
   .page p {
     margin: 0 1.4rem;
     text-indent: 1em; }
