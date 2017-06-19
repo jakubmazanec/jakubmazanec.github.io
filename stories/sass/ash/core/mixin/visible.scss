@@ -1,6 +1,0 @@
-// makes element un-transparent
-@mixin visible($opacity: 1)
-{
-	opacity: $opacity;
-	visibility: visible;
-}

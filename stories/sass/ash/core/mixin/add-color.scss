@@ -1,6 +1,0 @@
-@import '../function/_';
-
-@mixin add-color($value)
-{
-	$__objects: _('colors', $value, true) !global;
-}
