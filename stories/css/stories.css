@@ -946,10 +946,13 @@ textarea {
 .page {
 	margin: 0 0 2.8rem;
 	box-sizing: border-box;
-	float: left;
+	/*float: left;
 	width: 66.66667%;
 	margin-left: 16.66667%;
-	margin-right: 16.66667%;
+	margin-right: 16.66667%;*/
+	max-width: 33.6rem;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 0rem;
 	padding-right: 0rem; }
 	@media (max-width: 1000px) {
@@ -976,9 +979,20 @@ textarea {
 	.page p {
 		margin: 0 1.4rem;
 		text-indent: 1em; }
+		.page p.is-quote {
+			margin-top: 1.4rem;
+			margin-bottom: 1.4rem;
+			padding-left: 1em;
+			text-indent: 0;
+			font-style: italic;
+		}
 		.page p.is-indented {
 			margin-left: 0;
 			border-left: 0.1rem solid #d8cfdc;
+			padding-left: 1.3rem; }
+		.page p.is-indented-alt {
+			margin-left: 0;
+			border-left: 0.1rem solid #f8bf00;
 			padding-left: 1.3rem; }
 		.page p.is-spaced {
 			position: relative;
@@ -996,6 +1010,11 @@ textarea {
 				text-align: center; }
 			.page p.is-spaced + p {
 				text-indent: 0; }
+		.page p.is-spaced-alt {
+			position: relative;
+			margin-bottom: 1.4rem; }
+			.page p.is-spaced-alt + p {
+				text-indent: 0; }
 		.page p.is-small {
 			font-size: 0.8rem;
 			line-height: 1.75; }
@@ -1004,8 +1023,34 @@ textarea {
 			padding-top: 1.3rem;
 			margin-top: 5.6rem;
 			text-indent: 0; }
-	.page h1 + p {
+	.page h1 + p, .page h2 + p, .page h3 + p, .page h4 + p, .page p.is-small + p {
 		text-indent: 0; }
+
+
+.columns {
+	position: relative;
+	display: flex;
+}
+
+.columns:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+
+	background-color: #333;
+}
+
+.column {
+	width: 50%;
+}
+
+.column p:first-child {
+	text-indent: 0;
+}
 
 @media (max-width: 700px) {
 	body {
