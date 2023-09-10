@@ -9,14 +9,15 @@
 
 .subpage {
 	position: relative;
-	padding: 0 0 6rem;
+	overflow: auto;
 	min-height: 100vh;
 	background-color: #ffffff;
+	padding: 0 0 1.4rem;
 }
 
 .subpage .subpage__title {
 	margin: 0;
-	padding: 1.4rem 2.8rem;
+	margin: 1.4rem 2.8rem;
 	color: #f8bf00;
 	font-weight: 700;
 	font-size: 6rem;
@@ -105,68 +106,17 @@
 	}
 }
 
-/** Columns. */
-
-.columns {
-	position: relative;
-	display: flex;
-	padding: 2.8rem 1.4rem 0;
-}
-
-.columns--centered {
-	justify-content: center;
-}
-
-.columns .columns__column-1-1 {
-	width: 100%;
-	padding: 0 1.4rem;
-}
-
-.columns .columns__column-1-3 {
-	width: 33%;
-	padding: 0 1.4rem;
-}
-
-@media (max-width: 1280px) {
-	.columns {
-		display: block;
-		padding: 0;
-	}
-
-	.columns .columns__column-1-1 {
-		width: 75%;
-		margin: 0 12.5%;
-	}
-
-	.columns .columns__column-1-3 {
-		width: 75%;
-		margin: 0 12.5%;
-	}
-}
-
-@media (max-width: 960px) {
-	.columns {
-		display: block;
-		padding: 0;
-	}
-
-	.columns .columns__column-1-1 {
-		width: 100%;
-	}
-
-	.columns .columns__column-1-3 {
-		width: 100%;
-	}
-}
-
 /** Section. */
 
 .section {
+	max-width: 720px;
+	padding: 0 1.4rem;
+	margin: 2.8rem auto;
 }
 
 .section .section__title {
 	position: relative;
-	margin: 0 0 1.4rem;
+	margin: 2.1rem 0 1.4rem;
 	padding: 0 0 0.7rem;
 	font-size: 48px;
 	font-weight: 700;
