@@ -324,3 +324,11 @@
 .project .project__link + .project__link-type {
 	margin-top: 1.4rem;
 }
+
+.section .project:nth-of-type(1) {
+	margin-top: 2.1rem;
+}
+
+.section__title + .project {
+	margin-top: 0.7rem !important;
+}
